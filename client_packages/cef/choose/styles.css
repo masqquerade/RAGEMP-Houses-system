@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    background: rgb(36, 36, 36);
+    border-radius: 11px;
+    width: 640px;
+    position: relative;
+    height: 327px;
+    top: 300px;
+    left: 630px;
+}
+
+.center-content {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 163px;
+    height: 79px;
+    background: rgb(70, 70, 70);
+    color: rgb(90, 179, 124);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+    transition: 0.5s;
+    margin-right: 10px;
+    margin-top: 100px;
+}
+
+.item:hover {
+    background: rgb(90, 179, 124);
+    color: whitesmoke;
+}
+
+.item-sold:hover {
+    background: rgb(172, 45, 45);
+    color: whitesmoke;
+}

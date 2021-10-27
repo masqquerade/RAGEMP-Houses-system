@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="house" class="container">
+        <div class="wrapper">
+            <div class="header-info">
+                <div class="header-owner">
+                    Владелец: <span class="owner"><br>
+                         {{ ownerName }}</span>
+                </div>
+
+                <div class="header-class">
+                    Статус: <span class="class"><br>
+                         {{ houseClass }}</span>
+                </div>
+
+                <div class="header-gm">
+                    Гаражных мест: <span class="gm"><br>
+                         {{ gm }}</span>
+                </div>
+
+                <div class="header-price">
+                    Стоимость: <span class="price"><br>
+                         {{ price }}</span>
+                </div>
+            </div>
+
+            <div class="center-content">
+                <div @click="enterHouse()" class="item">
+                    <h4>Войти в
+                        <br>дом
+                    </h4>
+                </div>
+
+                <div class="item">
+                    <h4>Аренда
+                        <br>дома
+                    </h4>
+                </div>
+
+                <div @click="closeHouse()" class="item">
+                    <h4>Закрыть дом
+                    </h4>
+                </div>
+
+                <div @click="openHouse()" class="item">
+                    <h4>Открыть дом
+                    </h4>
+                </div>
+
+                <div @click="buyHouse()" class="item">
+                    <h4>Купить
+                        <br>дом
+                    </h4>
+                </div>
+
+                <div @click="sellHouse()" class="item item-sold">
+                    <h4>Продать
+                         <br>дом
+                     </h4>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/vue.js"></script>
+<script src="js/index.js"></script>
+
